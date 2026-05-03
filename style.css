@@ -1,0 +1,158 @@
+:root {
+  --primary: rgb(222, 5, 241);
+  --fourth: rgb(128, 0, 140);
+  --secondary: rgb(65, 0, 131);
+  --third: rgb(96, 0, 249);
+}
+
+.noto-sans-jp-roboto {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+.login,
+.register {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(70deg, var(--primary), var(--secondary));
+}
+
+.form-login,
+.form-register {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 50px 30px 50px;
+  height: 450px;
+  width: 250px;
+  box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+}
+
+.username,
+.password {
+  margin-bottom: 20px;
+  outline: none;
+  /* border: none; */
+  height: 20px;
+  font-size: 16px;
+  padding: 10px;
+  color: rgb(118, 118, 118);
+  transition: 0.1s ease-in-out;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+h1,
+.login-text {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.login-text {
+  margin-bottom: 20px;
+}
+
+.username:focus,
+.password:focus {
+  outline: none;
+  border: 1px rgba(222, 5, 241, 0.4);
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px 2px rgba(222, 5, 241, 0.4);
+}
+
+.username::placeholder,
+.password::placeholder {
+  font-size: 16px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 5px;
+}
+
+.checkbox p {
+  font-size: 14px;
+}
+
+.btn-login,
+.btn-register {
+  /* display: inline; */
+  /* background-image: linear-gradient(to right, var(--secondary), var(--primary)); */
+  background-color: var(--primary);
+  border: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* .btn-login:focus {
+  background-image: linear-gradient(
+    to right,
+    rgb(51, 0, 101),
+    rgb(124, 2, 135)
+  );
+} */
+
+.btn-login:hover,
+.btn-login:focus,
+.btn-register:hover,
+.btn-register:focus {
+  background-color: rgb(93, 1, 136);
+}
+
+.check-account,
+.check-account a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.check-account a {
+  color: rgb(222, 5, 241);
+  transition: color 0.2s ease-in-out;
+}
+
+.check-account a:focus,
+.check-account a:hover {
+  color: rgb(124, 2, 135);
+}
+
+.login-with {
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.sosial-media-login {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.sosial-media-login img {
+  width: 30px;
+}
+
+/* Sign Up */
+
+.register-title {
+  margin-bottom: 40px;
+}
+
+/* Sign Up */
